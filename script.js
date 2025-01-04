@@ -72,4 +72,38 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // Function to copy email to clipboard
+    window.copyEmail = function() {
+        const email = "jacobphhj@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+            const copyMessage = document.getElementById('copyMessage');
+            copyMessage.textContent = 'Email copied to clipboard!';
+            copyMessage.classList.add('show');
+            
+            // Hide the message after 2 seconds
+            setTimeout(() => {
+                copyMessage.classList.remove('show');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy email:', err);
+            // Fallback method for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = email;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                const copyMessage = document.getElementById('copyMessage');
+                copyMessage.textContent = 'Email copied to clipboard!';
+                copyMessage.classList.add('show');
+                setTimeout(() => {
+                    copyMessage.classList.remove('show');
+                }, 2000);
+            } catch (err) {
+                console.error('Fallback: Could not copy text: ', err);
+            }
+            document.body.removeChild(textArea);
+        });
+    };
 });
