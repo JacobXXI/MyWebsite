@@ -8,6 +8,7 @@ const projects = [
       'A windows music listener which integrates different music sources like youtube.',
     image: '/projects/JPMusicPlayer.png',
     tags: ['Music', 'Windows'],
+    downloadHref: '/JPMusicPlayer_SetUp.exe',
   },
   {
     title: 'Coming Soon',
@@ -49,24 +50,47 @@ function App() {
 
           <div className="product-track" aria-label="Project list">
             {projects.map((project, index) => (
-              <article
-                className="project-card"
-                key={project.title}
-                style={{ '--index': index } as CSSProperties}
-              >
-                <div className="project-media">
-                  <img src={project.image} alt={`${project.title} preview`} />
-                </div>
-                <div className="project-body">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="project-tags">
-                    {project.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
+              project.downloadHref ? (
+                <a
+                  className="project-card project-card-link"
+                  key={project.title}
+                  style={{ '--index': index } as CSSProperties}
+                  href={project.downloadHref}
+                  download
+                >
+                  <div className="project-media">
+                    <img src={project.image} alt={`${project.title} preview`} />
                   </div>
-                </div>
-              </article>
+                  <div className="project-body">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className="project-tags">
+                      {project.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              ) : (
+                <article
+                  className="project-card"
+                  key={project.title}
+                  style={{ '--index': index } as CSSProperties}
+                >
+                  <div className="project-media">
+                    <img src={project.image} alt={`${project.title} preview`} />
+                  </div>
+                  <div className="project-body">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className="project-tags">
+                      {project.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              )
             ))}
           </div>
         </section>

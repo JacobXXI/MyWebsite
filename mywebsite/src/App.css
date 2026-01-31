@@ -134,6 +134,17 @@
   animation-delay: calc(var(--index) * 120ms);
 }
 
+.project-card-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 70px rgba(6, 10, 18, 0.4);
+}
+
 .project-media {
   background: #0b131c;
   display: flex;
