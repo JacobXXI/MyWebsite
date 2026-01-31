@@ -266,6 +266,8 @@ function App() {
             <div className="section-header">
               <p className="section-eyebrow">Studio Notes</p>
               <h2 className="section-title">About Developer</h2>
+              <p> - Student</p>
+              <p> - Developer</p>
             </div>
 
             <div className="about-grid">
@@ -284,7 +286,7 @@ function App() {
               <div className="about-card">
                 <h3>Currently</h3>
                 <p>
-                  Designing a mobile app for converting dates between Chinese Lunar calendar and Gregorian calendar.
+                  Building a website that lists all movies showing in Melbourne cinemas.
                 </p>
               </div>
             </div>
