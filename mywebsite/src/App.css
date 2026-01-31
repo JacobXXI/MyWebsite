@@ -196,6 +196,200 @@
   text-transform: uppercase;
 }
 
+.calendar-page {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(87, 139, 210, 0.22), transparent 48%),
+    radial-gradient(circle at 80% 20%, rgba(142, 114, 255, 0.18), transparent 42%),
+    linear-gradient(180deg, #0b1016 0%, #0a0e12 60%, #090c11 100%);
+}
+
+.detail-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+  gap: clamp(2rem, 6vw, 4rem);
+  padding: clamp(3.5rem, 9vw, 6.5rem) clamp(1.5rem, 7vw, 7.5rem);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-hero::before {
+  content: '';
+  position: absolute;
+  inset: -20% 0 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 55%);
+  pointer-events: none;
+}
+
+.detail-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+.detail-eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--muted);
+  margin: 0 0 0.8rem;
+}
+
+.detail-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin: 0 0 1rem;
+  color: #ffffff;
+}
+
+.detail-hero-lede {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  margin: 0 0 1.6rem;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: #f6f8fc;
+  color: #0f1a22;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(8, 12, 16, 0.3);
+}
+
+.detail-hero-media {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-hero-media img {
+  width: min(360px, 80%);
+  filter: drop-shadow(0 24px 60px rgba(8, 12, 16, 0.4));
+}
+
+.calendar-overview .section-header {
+  max-width: 760px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.highlight-card {
+  padding: 1.6rem;
+  border-radius: 24px;
+  background: rgba(12, 18, 26, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(4, 8, 12, 0.35);
+}
+
+.highlight-card h3 {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.download-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.6rem;
+  border-radius: 24px;
+  background: rgba(11, 16, 22, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 40px rgba(3, 7, 11, 0.4);
+}
+
+.download-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.download-language {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.download-filename {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.download-action {
+  align-self: flex-start;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: #f6f8fc;
+  color: #0f1a22;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .about {
   background:
     radial-gradient(circle at 20% 30%, rgba(120, 168, 255, 0.18), transparent 45%),
@@ -324,6 +518,15 @@
 
   .project-media img {
     aspect-ratio: 4 / 3;
+  }
+
+  .detail-hero {
+    text-align: left;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
