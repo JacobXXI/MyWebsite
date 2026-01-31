@@ -1,0 +1,16 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coming Soon preview">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1b24" />
+      <stop offset="100%" stop-color="#2d4b63" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad)" />
+  <rect x="90" y="90" width="620" height="420" rx="36" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="2" />
+  <circle cx="640" cy="150" r="70" fill="rgba(255,255,255,0.12)" />
+  <text x="140" y="240" font-family="'Space Grotesk', Arial, sans-serif" font-size="44" fill="#f4f7ff">Coming Soon</text>
+  <text x="140" y="290" font-family="'Space Grotesk', Arial, sans-serif" font-size="20" letter-spacing="4" fill="rgba(244,247,255,0.7)">IN PROGRESS</text>
+  <line x1="140" y1="360" x2="540" y2="360" stroke="rgba(255,255,255,0.35)" stroke-width="5" />
+  <line x1="140" y1="400" x2="480" y2="400" stroke="rgba(255,255,255,0.2)" stroke-width="5" />
+  <line x1="140" y1="440" x2="520" y2="440" stroke="rgba(255,255,255,0.18)" stroke-width="5" />
+</svg>
