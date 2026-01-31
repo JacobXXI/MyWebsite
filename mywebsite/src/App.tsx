@@ -1,20 +1,22 @@
 import type { CSSProperties } from 'react'
 import './App.css'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const projects = [
   {
     title: 'JP Music Player',
     description:
       'A windows music listener which integrates different music sources like youtube.',
-    image: '/projects/JPMusicPlayer.png',
+    image: `${baseUrl}projects/JPMusicPlayer.png`,
     tags: ['Music', 'Windows'],
-    downloadHref: '/JPMusicPlayer_SetUp.exe',
+    downloadHref: `${baseUrl}JPMusicPlayer_SetUp.exe`,
   },
   {
     title: 'Coming Soon',
     description:
       'New releases are in progress - fresh apps and services landing soon.',
-    image: '/projects/coming-soon.svg',
+    image: `${baseUrl}projects/coming-soon.svg`,
     tags: [],
   },
 ]
@@ -32,7 +34,7 @@ function App() {
           preload="auto"
           aria-hidden="true"
         >
-          <source src="/background.mp4" type="video/mp4" />
+          <source src={`${baseUrl}background.mp4`} type="video/mp4" />
         </video>
         <div className="hero-overlay" />
         <div className="hero-content">
