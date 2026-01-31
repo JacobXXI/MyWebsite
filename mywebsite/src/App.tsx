@@ -8,17 +8,17 @@ const calendarDownloads = [
   {
     language: 'English',
     fileName: 'NightRainCalendar-en.apk',
-    href: `${baseUrl}NightRainCalendar-en.apk`,
+    href: `${baseUrl}downloads/NightRainCalendar-en.apk`,
   },
   {
     language: 'Simplified Chinese',
     fileName: 'NightRainCalendar-zhHans.apk',
-    href: `${baseUrl}NightRainCalendar-zhHans.apk`,
+    href: `${baseUrl}downloads/NightRainCalendar-zhHans.apk`,
   },
   {
     language: 'Traditional Chinese',
     fileName: 'NightRainCalendar-zhHant.apk',
-    href: `${baseUrl}NightRainCalendar-zhHant.apk`,
+    href: `${baseUrl}downloads/NightRainCalendar-zhHant.apk`,
   },
 ]
 
@@ -44,7 +44,7 @@ const projects = [
       'A windows music listener which integrates different music sources like youtube.',
     image: `${baseUrl}projects/JPMusicPlayer.png`,
     tags: ['Music', 'Windows'],
-    downloadHref: `${baseUrl}JPMusicPlayer_SetUp.exe`,
+    downloadHref: `${baseUrl}downloads/JPMusicPlayer_SetUp.exe`,
   },
   {
     title: 'Calendar',
