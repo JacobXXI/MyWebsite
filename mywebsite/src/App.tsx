@@ -39,20 +39,20 @@ const calendarHighlights = [
 
 const projects = [
   {
-    title: 'JP Music Player',
-    description:
-      'A windows music listener which integrates different music sources like youtube.',
-    image: `${baseUrl}projects/JPMusicPlayer.png`,
-    tags: ['Music', 'Windows'],
-    downloadHref: `${baseUrl}downloads/JPMusicPlayer_SetUp.exe`,
-  },
-  {
     title: 'Calendar',
     description:
       'A mobile calendar application that can show and create events using both Chinese Lunar and Gregorian dates.',
     image: `${baseUrl}projects/Calendar.svg`,
     tags: ['Organization', 'Android'],
     pageHref: `${baseUrl}#calendar`,
+  },
+  {
+    title: 'JP Music Player',
+    description:
+      'My first project. A simple windows music listener which integrates different music sources like youtube.',
+    image: `${baseUrl}projects/JPMusicPlayer.png`,
+    tags: ['Music', 'Windows'],
+    downloadHref: `${baseUrl}downloads/JPMusicPlayer_SetUp.exe`,
   },
   {
     title: 'Coming Soon',
