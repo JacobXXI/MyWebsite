@@ -141,7 +141,7 @@ const translations = {
     projects: [
       {
         title: '日历',
-        description: '一款移动日历应用，可同时显示并创建农历与公历事件。',
+        description: '一款日历应用，可同时显示并创建农历与公历事件。',
         image: asset('projects/Calendar.svg'),
         tags: ['管理', 'Android'],
         pageHash: calendarHash,
@@ -251,19 +251,19 @@ const translations = {
     featuredWork: {
       eyebrow: '精選作品',
       title: '產品列表',
-      ariaLabel: '專案列表',
+      ariaLabel: '項目列表',
     },
     projects: [
       {
         title: '日曆',
-        description: '一款行動日曆應用，可同時顯示並建立農曆與公曆事件。',
+        description: '一款日曆應用，可同時顯示並創建農曆與公曆事件。',
         image: asset('projects/Calendar.svg'),
         tags: ['管理', 'Android'],
         pageHash: calendarHash,
       },
       {
         title: 'JP Music Player',
-        description: '我的第一個專案。一個簡潔的 Windows 音樂播放器，整合了如 YouTube 等不同音樂來源。',
+        description: '我的第一個項目。一個簡潔的 Windows 音樂播放器，整合了如 YouTube 等不同音樂來源。',
         image: asset('projects/JPMusicPlayer.png'),
         tags: ['音樂', 'Windows'],
         downloadPath: 'downloads/JPMusicPlayer_SetUp.exe',
@@ -282,23 +282,23 @@ const translations = {
       cards: [
         {
           title: '專注',
-          description: '乾淨的使用者體驗、穩健的系統，以及解決真實問題的演算法。',
+          description: '乾淨簡潔的用戶體驗、穩健的系統和演算法。',
         },
         {
           title: '技術棧',
-          description: 'React、C++、Python，以及面向創意應用的工作流程。',
+          description: 'React、C++、Python，以及創意應用工作流。',
         },
         {
           title: '近況',
-          description: '正在打造一個列出墨爾本影院所有上映影片的網站。',
+          description: '正在構建一個列出墨爾本影院所有上映影片的網站。',
         },
       ],
     },
     contact: {
       eyebrow: '打個招呼',
-      title: '聯絡',
+      title: '聯繫',
       lede: '歡迎洽談合作、新產品或簡單問候。',
-      githubAriaLabel: '前往 GitHub 個人頁',
+      githubAriaLabel: '訪問 GitHub 主頁',
       emailAriaLabel: '發送郵件',
     },
     footer: '© 2026 Night Rain Studio',
@@ -306,8 +306,8 @@ const translations = {
       backLink: '返回首頁',
       backLinkAriaLabel: '返回首頁',
       eyebrow: '夜雨日曆',
-      title: '面向 Android 的農曆 + 公曆日曆',
-      lede: '並排使用兩種曆法規劃行程。使用你偏好的曆法建立事件，自動保持同步。',
+      title: '適用 Android 的農曆 + 公曆日曆',
+      lede: '並排使用兩種曆法規劃日程。使用你偏好的曆法創建事件，自動保持同步。',
       primaryAction: '下載 APK',
       overview: {
         eyebrow: '概覽',
@@ -321,12 +321,12 @@ const translations = {
           description: '在同一月視圖中同時查看農曆與公曆日期。',
         },
         {
-          title: '靈活的事件建立',
-          description: '可用任一曆法建立事件，並保持兩者同步。',
+          title: '靈活的事件創建',
+          description: '可用任一曆法創建事件，並保持兩者同步。',
         },
         {
           title: '按語言提供安裝包',
-          description: '從下方清單選擇符合你語言偏好的 APK。',
+          description: '從下方列表選擇符合你語言偏好的 APK。',
         },
       ],
       downloads: {
@@ -354,8 +354,7 @@ const translations = {
       ],
       downloadAriaLabel: (language: string) => `下載 ${language} APK`,
     },
-  },
-} as const
+  },} as const
 
 type LanguageKey = keyof typeof translations
 type Translation = (typeof translations)[LanguageKey]
@@ -721,3 +720,4 @@ function App() {
 }
 
 export default App
+
