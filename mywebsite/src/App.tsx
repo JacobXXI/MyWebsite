@@ -155,7 +155,7 @@ const translations = {
       },
       {
         title: '即将上线',
-        description: '新作品正在准备中——全新的应用和服务即将推出。',
+        description: '新作品正在准备中',
         image: asset('projects/coming-soon.svg'),
         tags: [],
       },
@@ -167,11 +167,11 @@ const translations = {
       cards: [
         {
           title: '专注',
-          description: '干净的用户体验、稳健的系统，以及解决真实问题的算法。',
+          description: '干净简洁的用户体验、稳定高效的系统和算法。',
         },
         {
           title: '技术栈',
-          description: 'React、C++、Python，以及面向创意应用的工作流。',
+          description: 'React、C++、Python，以及创意应用工作流。',
         },
         {
           title: '近况',
@@ -191,7 +191,7 @@ const translations = {
       backLink: '返回首页',
       backLinkAriaLabel: '返回首页',
       eyebrow: '夜雨日历',
-      title: '面向 Android 的农历 + 公历日历',
+      title: '适用 Android 系统的农历 + 公历日历',
       lede: '并排使用两种历法规划日程。使用你偏好的历法创建事件，自动保持同步。',
       primaryAction: '下载 APK',
       overview: {
