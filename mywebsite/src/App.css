@@ -16,6 +16,43 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.hero-toolbar,
+.detail-toolbar {
+  position: absolute;
+  top: clamp(1rem, 3vw, 2.5rem);
+  right: clamp(1rem, 4vw, 3.5rem);
+  z-index: 2;
+}
+
+.language-switcher {
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: rgba(6, 10, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.language-link {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.language-link:hover {
+  color: #ffffff;
+}
+
+.language-link.is-active {
+  background: #f6f8fc;
+  color: #0f1a22;
+}
+
 .hero-video {
   position: absolute;
   inset: 0;
@@ -510,6 +547,17 @@
 @media (max-width: 720px) {
   .hero-subtitle {
     letter-spacing: 0.2em;
+  }
+
+  .hero-toolbar,
+  .detail-toolbar {
+    top: 0.9rem;
+    right: 0.9rem;
+  }
+
+  .language-link {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
   }
 
   .project-card {
